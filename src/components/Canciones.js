@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './../assets/Canciones.css';
 
 class Canciones extends Component{
     
@@ -28,18 +29,18 @@ class Canciones extends Component{
       
 
         return(
-            <div>
-             <h1>Todas las canciones</h1>   
+            <div className= "contenedorCanciones">
+             <h1 className='tituloCanciones'>Todas las canciones</h1>   
               {this.state.songs.map((song, i) => {
                 return (
-                    <div key={song + i}>
+                    <div key={song + i} className="cancion">
                         <h4>Titulo: {song.titulo}</h4>
-                        <p>Duración: {song.duracion}</p>
+                        <p>Duración: {Math.trunc(song.duracion/60)} Minutos {song.duracion%60} Segundos</p>
                         <p>Genero: {song.generos.name}</p>
                         <p>Artista: {song.artistas.nombre} {song.artistas.apellido}</p>
                     </div>
                 );})}
-                <h2>Ultima canción: {this.state.ultimaCancion.titulo}</h2>
+                <h2 className='ultimaCancion'>Ultima canción: {this.state.ultimaCancion.titulo}</h2>
                               
             </div>
         )

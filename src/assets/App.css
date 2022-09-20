@@ -3,6 +3,12 @@
   color: white;
 }
 
+.AppBody{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .App-logo {
   height: 10vmin;
   pointer-events: none;

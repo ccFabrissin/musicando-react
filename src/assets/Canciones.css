@@ -1,0 +1,21 @@
+.contenedorCanciones{
+    box-shadow: 0px 0px 10px white;
+    max-width: 40vw;
+    padding: 2%;
+    margin: 2%;
+    min-width: 40vw;
+}
+
+.tituloCanciones{
+    text-decoration: underline;
+}
+
+.ultimaCancion{
+    border: 1px solid white
+}
+
+.cancion{
+    box-shadow: 0px 0px 10px darkgrey;
+    margin: 1%;
+    padding: 2%
+}

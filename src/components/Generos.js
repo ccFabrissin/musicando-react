@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './../assets/Generos.css';
 
 class Generos extends Component{
     
@@ -26,8 +27,8 @@ class Generos extends Component{
     
 
     return(
-      <div>
-       <h1>Todos los Generos</h1>   
+      <div className= "contenedorGeneros">
+       <h1 className='tituloGeneros'>Todos los Generos</h1>   
           {this.state.generos.map((genero, i) => 
             {
              return (
